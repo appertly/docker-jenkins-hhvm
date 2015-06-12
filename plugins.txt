@@ -1,0 +1,12 @@
+git:2.3.5
+scm-api:0.2
+git-client:1.16.1
+ssh-credentials:1.10
+credentials:1.22
+xunit:1.96
+junit:1.6
+cloverphp:0.4
+gravatar:2.1
+google-login:1.1
+gitlab-logo:1.0.0
+gitlab-merge-request-jenkins:1.2.2
