@@ -11,6 +11,8 @@ RUN apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e728
     && apt-get update && apt-get install -y --no-install-recommends ant hhvm=$HHVM_VERSION \
     && echo "date.timezone = UTC" >> /etc/hhvm/php.ini \
     && echo "hhvm.libxml.ext_entity_whitelist = file" >> /etc/hhvm/php.ini \
+    && echo "hhvm.hack.lang.auto_typecheck = false" >> /etc/hhvm/php.ini \
+    && echo "hhvm.hack.lang.look_for_typechecker = false" >> /etc/hhvm/php.ini \
     && echo "hhvm.hack.lang.auto_typecheck = false" >> /etc/hhvm/server.ini \
     && echo "hhvm.hack.lang.look_for_typechecker = false" >> /etc/hhvm/server.ini \
     && apt-get clean \
